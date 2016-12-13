@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_end_level"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sergigonzalez.examenm8uf1.EndLevel">
+
+    <TextView
+        android:text="Fallos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewResultadoFinal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginTop="63dp"
+        android:id="@+id/textViewFallosFin" />
+
+    <TextView
+        android:text="Aciertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewFallosFin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:id="@+id/textViewAciertosFin" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAciertosFin"
+        android:layout_alignLeft="@+id/textViewAciertosFin"
+        android:layout_alignStart="@+id/textViewAciertosFin"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textViewResultadoA" />
+
+    <TextView
+        android:text="RESULTADO FINAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/textViewResultadoFinal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResultadoF"
+        android:layout_alignBaseline="@+id/textViewResultadoA"
+        android:layout_alignBottom="@+id/textViewResultadoA"
+        android:layout_alignLeft="@+id/textViewFallosFin"
+        android:layout_alignStart="@+id/textViewFallosFin" />
+
+    <TextView
+        android:text="Mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewResultadoF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:id="@+id/textViewMensaje" />
+
+    <Button
+        android:text="Reiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMensaje"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/buttonReiniciar" />
+</RelativeLayout>

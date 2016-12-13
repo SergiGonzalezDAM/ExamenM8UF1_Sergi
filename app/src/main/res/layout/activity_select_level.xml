@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_level"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sergigonzalez.examenm8uf1.SelectLevel">
+
+        <TextView
+            android:text="Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="120dp"
+            android:id="@+id/nombreUser"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/nombreUser"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="49dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/editTextJugador" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupTema"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/editTextJugador"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:text="Suma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonSuma" />
+
+            <RadioButton
+                android:text="Resta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonResta" />
+
+            <RadioButton
+                android:text="Multiplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonMulti" />
+            <RadioButton
+                android:text="Division"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonDivision" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupDificultad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_below="@+id/radioGroupTema"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:text="5 Preguntas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonFacil" />
+
+            <RadioButton
+                android:text="10 Preguntas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonNormal" />
+
+            <RadioButton
+                android:text="20 Preguntas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonDificil" />
+        </RadioGroup>
+
+        <TextView
+            android:text="Tema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTema"
+            android:layout_below="@+id/editTextJugador"
+            android:layout_alignLeft="@+id/buttonSend"
+            android:layout_alignStart="@+id/buttonSend" />
+
+        <TextView
+            android:text="Dificultad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupTema"
+            android:layout_alignLeft="@+id/nombreUser"
+            android:layout_alignStart="@+id/nombreUser"
+            android:id="@+id/textViewDifi" />
+
+        <Button
+            android:text="Enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSend"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textViewDifi"
+            android:layout_alignStart="@+id/textViewDifi" />
+
+
+</RelativeLayout>
